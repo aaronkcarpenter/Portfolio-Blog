@@ -1,12 +1,14 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 
+import '../styling/posts.css'
+
 export default function Blog({ data }) {
   const { posts } = data.blog
 
   return(
     <div>
-      <h1>Posts</h1>
+      <h1 className='header'>Posts</h1>
 
       {posts.map(post => (
         <article key={post.id}>

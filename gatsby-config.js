@@ -7,8 +7,8 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Aaron Kyle',
-    description: 'Software Development, Options, and Urban Pop Culture',
+    title: 'Aaron Carpenter',
+    description: 'Software Engineering | Business & Investing Enthusiast | Content Creator',
   },
   plugins: [
     {
