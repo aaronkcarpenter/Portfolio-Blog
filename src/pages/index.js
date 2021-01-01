@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby'
 
 import '../styling/blog.css';
 
+
 export default function Home({ data }) {
   const {title, description } = data.site.siteMetadata
 
