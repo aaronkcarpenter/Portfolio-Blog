@@ -10,18 +10,22 @@ export default function Home({ data }) {
 
   return (
     <div>
-      <div className='title-header'>
-        <h1>{title}</h1>
+      <div className='headers-container'>
+        <div className='title-header'>
+          <h1>{title}</h1>
+        <div className='subheader-home'>
+          <p>{description}</p>
+        </div>
+        </div>
       </div>
-      <div className='subheader-home'>
-        <p>{description}</p>
-      </div>
+      {/* <div className='subheader-home'>
+      </div> */}
       <div className='image-container'>
         <img  className='header-photo' alt='Sexy Man' src={data.image.publicURL} />
       </div>
       {/* <Blog /> */}
-      <div className='bio'>
-        <p>
+      <div className='bio-container'>
+        <p className='bio-container__child'>
           I'm Aaron, a Supply Chain and Logistics professional turned Software engineer. 
           I'm well versed in JavaScript, PostgreSQL, Express, Python, Firebase, Flask 
           and a host of other frameworks and languages. My interests are in building 
@@ -38,11 +42,11 @@ export default function Home({ data }) {
       <div className='main-container'>
         <div className='projects-section'>
           <div className='projects-header'>
-            <h2>Projects</h2>
+            <h2>Current Projects</h2>
           </div>
           <div className='projects-links link-one'>
             <small>
-              <a href='https://app-academy-capstone-project.web.app/'>Aimé Leon Dore</a>
+              <a href='https://app-academy-capstone-project.web.app/' target='_blank'>Aimé Leon Dore</a>
               <span>
                 {/* <img alt='Clothing Website' src-'/#' className='project-one__image' /> */}
               </span>
@@ -50,12 +54,12 @@ export default function Home({ data }) {
           </div>
           <div className='projects-links link-two'>
             <small>
-              <a href='https://hypesnob.herokuapp.com/'>HypeSnob</a>
+              <a href='https://hypesnob.herokuapp.com/' target='_blank'>HypeSnob</a>
             </small>
           </div>
           <div className='projects-links link-three'>
             <small>
-              <a href='http://splitorama.herokuapp.com/'>Split-O-Rama</a>
+              <a href='http://splitorama.herokuapp.com/' target='_blank'>Split-O-Rama</a>
             </small>
           </div>
         </div>
@@ -64,13 +68,13 @@ export default function Home({ data }) {
             <h2>Social</h2>
           </div>
           <div className='socials-links link-one'>
-            <a href='https://www.github.com/aaronkcarpenter'>Github</a>
+            <a href='https://www.github.com/aaronkcarpenter' target='_blank'>Github</a>
           </div>
           <div className='socials-links link-two'>
-            <a href='https://www.linkedin.com/in/aaronkcarpenter'>LinkedIn</a>
+            <a href='https://www.linkedin.com/in/aaronkcarpenter' target='_blank'>LinkedIn</a>
           </div>
           <div className='socials-links link-three'>
-            <a href='https://angel.co/u/aaron-carpenter-4'>AngelList</a>
+            <a href='https://angel.co/u/aaron-carpenter-4' target='_blank'>AngelList</a>
           </div>
         </div>
         <div className='contact-section'>
