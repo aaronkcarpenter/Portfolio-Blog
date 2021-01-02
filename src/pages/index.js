@@ -1,8 +1,10 @@
 import React from "react"
 import Blog from '../pages/blog';
+import Footer from "./footer";
 import { graphql, Link } from 'gatsby'
 
 import '../styling/blog.css';
+import Navbar from "./navbar";
 
 
 export default function Home({ data }) {
@@ -10,6 +12,9 @@ export default function Home({ data }) {
 
   return (
     <div>
+      <div>
+        <Navbar />
+      </div>
       <div className='headers-container'>
         <div className='title-header'>
           <h1>{title}</h1>
@@ -36,47 +41,100 @@ export default function Home({ data }) {
           I'm looking for a role that pushes me for growth, both personally and professionally.
         </p>
       </div>
-      <div className='blog-container'>
-        <Link className='link' to='/blog'>Checkout My Recent Blog Posts</Link>
+      <div className='blog-section'>
+      <div className='blog-links link-one'>
+        <a href='http://localhost:8000/my-first-post/' target='_blank'>Blog Activated</a>
+      <div className='image-one__container'>
+        <img alt='BlogPost' src='/#' target='_blank' />
       </div>
-      <div className='main-container'>
-        <div className='projects-section'>
-          <div className='projects-header'>
-            <h2>Current Projects</h2>
-          </div>
-          <div className='projects-links link-one'>
-            <small>
-              <a href='https://app-academy-capstone-project.web.app/' target='_blank'>Aimé Leon Dore</a>
-              <span>
-                {/* <img alt='Clothing Website' src-'/#' className='project-one__image' /> */}
-              </span>
-            </small>
-          </div>
-          <div className='projects-links link-two'>
-            <small>
-              <a href='https://hypesnob.herokuapp.com/' target='_blank'>HypeSnob</a>
-            </small>
-          </div>
-          <div className='projects-links link-three'>
-            <small>
-              <a href='http://splitorama.herokuapp.com/' target='_blank'>Split-O-Rama</a>
-            </small>
+      </div>
+      <div className='blog-links link-two'>
+        <a href='http://localhost:8000/my-first-post/' target='_blank'>Blog Post 2</a>
+        <div className='image-one__container'>
+          <img alt='LinkedIn Profile' src='/#' target='_blank' />
+        </div>
+      </div>
+      <div className='blog-links link-three'>
+        <a href='http://localhost:8000/my-first-post/' target='_blank'>Blog Post 3</a>
+        <div className='image-one__container'>
+          <img alt='AngelList Profile' src='/#' target='_blank' />
+        </div>
+      </div>
+      <div className='blog-header'>
+        <Link className='link blog-header' to='/blog'>Blog</Link>
+      </div>
+      </div>
+      <div className='projects-section'>
+        <div className='projects-header'>
+          <h2>What I'm Currently Working On</h2>
+        </div>
+        <div className='projects-links link-one'>
+          <p>
+            <img alt='Clothing Website' src='/#' className='project-one__image' />
+          </p>
+          <div className='project-link'>
+            <a href='https://app-academy-capstone-project.web.app/' target='_blank'>Aimé Leon Dore</a>
           </div>
         </div>
-        <div className='socials-section'>
-          <div className='socials-header'>
-            <h2>Social</h2>
+        <p>An e-Commerce platform for all of your Men's mid to high-end fashion needs.</p>
+        <div className='projects-links link-two'>
+          <p>
+            <img alt='Sneaker Website' src='/#' className='project-one__image' />
+          </p>
+          <div className='project-link'>
+            <a href='https://hypesnob.herokuapp.com/' target='_blank'>HypeSnob</a>
           </div>
+        </div>
+        <p>Celebrate sneaker culture and browse the latest styles of Jordan, Nike, and Adidas.</p>
+        <div className='projects-links link-three'>
+          <p>
+            <img alt='Expense Splitting Application' src='/#' className='project-one__image' />
+          </p>
+          <div className='project-link'>
+            <a href='http://splitorama.herokuapp.com/' target='_blank'>Split-O-Rama</a>
+          </div>
+        </div>
+        <p>Keep track of and split expenses with others.</p>
+        <div className='projects-links link-four'>
+          <p>
+            <img alt='Twitter Bot' src='/#' className='project-one__image' />
+          </p>
+          <div className='project-link'>
+            <a href='http://twitter.com/bentleysuperior' target='_blank'>Twitter Bot</a>
+          </div>
+        </div>
+      </div>
+      <div className='socials-section'>
+        <div className='socials-header'>
+          <h2>Social</h2>
+        </div>
+        <div className='socials-links__container'>
           <div className='socials-links link-one'>
             <a href='https://www.github.com/aaronkcarpenter' target='_blank'>Github</a>
+          <div className='image-one__container'>
+            <img alt='Github Website' src='/#' target='_blank' />
           </div>
+          </div>
+
+        </div>
+        <div className='socials-links__container'>
           <div className='socials-links link-two'>
             <a href='https://www.linkedin.com/in/aaronkcarpenter' target='_blank'>LinkedIn</a>
-          </div>
-          <div className='socials-links link-three'>
-            <a href='https://angel.co/u/aaron-carpenter-4' target='_blank'>AngelList</a>
+            <div className='image-one__container'>
+              <img alt='LinkedIn Profile' src='/#' target='_blank' />
+            </div>
           </div>
         </div>
+        <div className='socials-links__container'>
+          <div className='socials-links link-three'>
+            <a href='https://angel.co/u/aaron-carpenter-4' target='_blank'>AngelList</a>
+            <div className='image-one__container'>
+              <img alt='AngelList Profile' src='/#' target='_blank' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='main-container'>
         <div className='contact-section'>
           <div className='contact-header'>
             <h2>Contact</h2>
@@ -88,8 +146,8 @@ export default function Home({ data }) {
             <a href='aaronkcarpenter@gmail.com'>Email Me</a>
           </div>
         </div>
-
       </div>
+      <Footer />
     </div>
   )
 }

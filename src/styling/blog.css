@@ -3,7 +3,8 @@ body {
   color: white; */
   background-color: white;
   color: #0b1c2f;
-  font-family: Inter, sans-serif;
+  /* font-family: Inter, sans-serif; */
+  font-family: Geosanslight, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   margin: 0;
@@ -52,8 +53,12 @@ body {
   border-radius: 50%;
 }
 
-small {
-  font-size: 80%;
+.projects-header,
+.socials-header,
+.blog-header {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: underline;
 }
 
 a {
@@ -61,7 +66,8 @@ a {
 }
 
 .link:visited {
-  color: red;
+  /* color: red; */
+  text-decoration: none;
 }
 
 .bio-container {
@@ -83,13 +89,46 @@ a {
   width: 50%;
 }
 
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.socials-links__container {
+  display: flex;
+  align-content: center;
+  border: 1px black ridge;
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .projects-section,
 .socials-section,
 .contact-section {
-  font-family: Lora, sans-serif;
-  color: #848d96;
+  /* font-family: Lora, sans-serif; */
   font-size: 16px;
   line-height: 160%;
+}
+
+.project-link {
+  text-align: center;
+}
+
+.socials-links,
+.blog-links {
+  text-align: center;
+  font-size: 18px;
 }
 
 .link-one,
