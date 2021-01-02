@@ -15,14 +15,14 @@ export default function Home({ data }) {
       <div>
         <Navbar />
       </div>
-      <div className='headers-container'>
+      {/* <div className='headers-container'>
         <div className='title-header'>
           <h1>{title}</h1>
         <div className='subheader-home'>
           <p>{description}</p>
         </div>
         </div>
-      </div>
+      </div> */}
       {/* <div className='subheader-home'>
       </div> */}
       <div className='image-container'>
@@ -31,14 +31,14 @@ export default function Home({ data }) {
       {/* <Blog /> */}
       <div className='bio-container'>
         <p className='bio-container__child'>
-          I'm Aaron, a Supply Chain and Logistics professional turned Software engineer. 
+          Hi! I'm Aaron, a Supply Chain and Logistics professional turned Software engineer. 
           I'm well versed in JavaScript, PostgreSQL, Express, Python, Firebase, Flask 
           and a host of other frameworks and languages. My interests are in building 
-          products from the visualization phase into tangible products. I simply enjoy 
+          products, developing tools to acquire data, and automation. To put it simply, I enjoy 
           merging the two worlds of business and technology together. The internet 
-          has been an amazing place for me since I was a child, and I'm quite intrigued 
-          with how I can make the next young Aaron feel the same way that I do about it. 
-          I'm looking for a role that pushes me for growth, both personally and professionally.
+          has been an amazing place for many years, and I'm intrigued 
+          with using code to take the benefits to a new level. I'm currently looking 
+          for a role that pushes me for growth, both personally and professionally.
         </p>
       </div>
       <div className='blog-section'>
@@ -134,7 +134,7 @@ export default function Home({ data }) {
           </div>
         </div>
       </div>
-      <div className='main-container'>
+      {/* <div className='main-container'>
         <div className='contact-section'>
           <div className='contact-header'>
             <h2>Contact</h2>
@@ -143,10 +143,10 @@ export default function Home({ data }) {
             <a href='https://docs.google.com/document/d/16iFr5Lm5A0wd0E9YwMRcWvwwZPIf99BM/export?format=pdf&attachment=false'>Resumé</a>
           </div>
           <div className='contact-links link-two'>
-            <a href='aaronkcarpenter@gmail.com'>Email Me</a>
+            <a href='mailto: aaronkcarpenter@gmail.com'>Email Me</a>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   )

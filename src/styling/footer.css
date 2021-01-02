@@ -1,7 +1,11 @@
 .footer-container {
-  border: 0.5px solid black;
+  /* border: 0.5px solid black; */
+  background-color: black;
+  color: white;
   font-size: 20px;
   display: flex;
   flex-direction: center;
   justify-content: center;
+  /* padding-top: 20px; */
+  margin-top: 20px;
 }
