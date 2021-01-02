@@ -25,10 +25,10 @@ export default function Home({ data }) {
       </div> */}
       {/* <div className='subheader-home'>
       </div> */}
+      {/* <Blog /> */}
       <div className='image-container'>
         <img  className='header-photo' alt='Sexy Man' src={data.image.publicURL} />
       </div>
-      {/* <Blog /> */}
       <div className='bio-container'>
         <p className='bio-container__child'>
           Hi! I'm Aaron, a Supply Chain and Logistics professional turned Software engineer. 
@@ -70,39 +70,48 @@ export default function Home({ data }) {
         </div>
         <div className='projects-links link-one'>
           <p>
-            <img alt='Clothing Website' src='/#' className='project-one__image' />
+            <img alt='Clothing Website' src='https://u.cubeupload.com/aaronkyle/ScreenShot20210101at.png' className='project-one__image' />
           </p>
-          <div className='project-link'>
-            <a href='https://app-academy-capstone-project.web.app/' target='_blank'>Aimé Leon Dore</a>
-          </div>
+        </div>
+        <div className='project-link'>
+          <a href='https://app-academy-capstone-project.web.app/' target='_blank'>Aimé Leon Dore</a>
         </div>
         <p>An e-Commerce platform for all of your Men's mid to high-end fashion needs.</p>
         <div className='projects-links link-two'>
           <p>
-            <img alt='Sneaker Website' src='/#' className='project-one__image' />
+            <img alt='Sneaker Website' src='https://u.cubeupload.com/aaronkyle/ScreenShot20210102at.png' className='project-two__image' />
           </p>
-          <div className='project-link'>
-            <a href='https://hypesnob.herokuapp.com/' target='_blank'>HypeSnob</a>
-          </div>
+        </div>
+        <div className='project-link'>
+          <a href='https://hypesnob.herokuapp.com/' target='_blank'>HypeSnob</a>
         </div>
         <p>Celebrate sneaker culture and browse the latest styles of Jordan, Nike, and Adidas.</p>
         <div className='projects-links link-three'>
           <p>
-            <img alt='Expense Splitting Application' src='/#' className='project-one__image' />
+            <img alt='Expense Splitting Application' src='https://u.cubeupload.com/aaronkyle/ScreenShot20200830at.png' className='project-three__image' />
           </p>
-          <div className='project-link'>
-            <a href='http://splitorama.herokuapp.com/' target='_blank'>Split-O-Rama</a>
-          </div>
+        </div>
+        <div className='project-link'>
+          <a href='http://splitorama.herokuapp.com/' target='_blank'>Split-O-Rama</a>
         </div>
         <p>Keep track of and split expenses with others.</p>
         <div className='projects-links link-four'>
           <p>
             <img alt='Twitter Bot' src='/#' className='project-one__image' />
           </p>
-          <div className='project-link'>
-            <a href='http://twitter.com/bentleysuperior' target='_blank'>Twitter Bot</a>
-          </div>
         </div>
+        <div className='project-link'>
+          <a href='http://twitter.com/bentleysuperior' target='_blank'>Twitter Bot</a>
+        </div>
+        <div className='projects-links link-five'>
+          <p>
+            <img alt='Property Scraper' src='https://u.cubeupload.com/aaronkyle/f70ScreenShot20201112at.png' className='project-five__image' />
+          </p>
+        </div>
+        <div className='project-link'>
+          <a href='http://github.com/aaronkcarpenter' target='_blank'>Software Jobs Scraper</a>
+        </div>
+        <p>This scraper allows you to pull relevant Software Engineer job postings.</p>
       </div>
       <div className='socials-section'>
         <div className='socials-header'>
@@ -110,9 +119,9 @@ export default function Home({ data }) {
         </div>
         <div className='socials-links__container'>
           <div className='socials-links link-one'>
-            <a href='https://www.github.com/aaronkcarpenter' target='_blank'>Github</a>
+            <a href='https://www.github.com/aaronkcarpenter' target='_blank' className='socials-links__title'>Github</a>
           <div className='image-one__container'>
-            <img alt='Github Website' src='/#' target='_blank' />
+            <img alt='Github Website' src='https://u.cubeupload.com/aaronkyle/eb0ScreenShot20210102at.png' target='_blank' className='social-image__one' />
           </div>
           </div>
 
@@ -121,7 +130,7 @@ export default function Home({ data }) {
           <div className='socials-links link-two'>
             <a href='https://www.linkedin.com/in/aaronkcarpenter' target='_blank'>LinkedIn</a>
             <div className='image-one__container'>
-              <img alt='LinkedIn Profile' src='/#' target='_blank' />
+              <img alt='LinkedIn Profile' src='https://u.cubeupload.com/aaronkyle/dc9ScreenShot20210102at.png' target='_blank' className='social-image__two' />
             </div>
           </div>
         </div>
@@ -129,7 +138,7 @@ export default function Home({ data }) {
           <div className='socials-links link-three'>
             <a href='https://angel.co/u/aaron-carpenter-4' target='_blank'>AngelList</a>
             <div className='image-one__container'>
-              <img alt='AngelList Profile' src='/#' target='_blank' />
+              <img alt='AngelList Profile' src='https://u.cubeupload.com/aaronkyle/304ScreenShot20210102at.png' target='_blank' className='social-image__three' />
             </div>
           </div>
         </div>
