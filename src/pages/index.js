@@ -43,21 +43,21 @@ export default function Home({ data }) {
       </div>
       <div className='blog-section'>
       <div className='blog-links link-one'>
-        <a href='http://localhost:8000/my-first-post/' target='_blank'>Blog Activated</a>
+        <a href='/my-first-post/' target='_blank'>Blog Activated</a>
       <div className='image-one__container'>
         <img alt='BlogPost' src='/#' target='_blank' />
       </div>
       </div>
       <div className='blog-links link-two'>
-        <a href='http://localhost:8000/my-first-post/' target='_blank'>Blog Post 2</a>
+        <a href='/my-first-post/' target='_blank'>Blog Post 2</a>
         <div className='image-one__container'>
-          <img alt='LinkedIn Profile' src='/#' target='_blank' />
+          <img alt='Post 2' src='/#' target='_blank' />
         </div>
       </div>
       <div className='blog-links link-three'>
-        <a href='http://localhost:8000/my-first-post/' target='_blank'>Blog Post 3</a>
+        <a href='/my-first-post/' target='_blank'>Blog Post 3</a>
         <div className='image-one__container'>
-          <img alt='AngelList Profile' src='/#' target='_blank' />
+          <img alt='Post 3' src='/#' target='_blank' />
         </div>
       </div>
       <div className='blog-header'>

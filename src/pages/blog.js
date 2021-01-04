@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 
+import Navbar from "./navbar";
+import Footer from "./footer";
 import '../styling/posts.css'
 
 export default function Blog({ data }) {
@@ -8,6 +10,7 @@ export default function Blog({ data }) {
 
   return(
     <div>
+      <Navbar />
       <h1 className='header'>Posts</h1>
 
       {posts.map(post => (
@@ -22,6 +25,11 @@ export default function Blog({ data }) {
           <p>{post.excerpt}</p>
         </article>
       ))}
+
+      <div className='back-home'>
+        <a href='/'>Take Me Home</a>
+      </div>
+      <Footer />
     </div>
   )
 }
