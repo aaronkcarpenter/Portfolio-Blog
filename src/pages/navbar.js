@@ -26,7 +26,7 @@ export default function Navbar() {
             <a href='/blog'>Blog</a>
           </li>
           <li className='navbar--link-item'>
-            <a href='https://docs.google.com/document/d/16iFr5Lm5A0wd0E9YwMRcWvwwZPIf99BM/export?format=pdf&attachment=false'>Resumé</a>
+            <a href='https://docs.google.com/document/d/16iFr5Lm5A0wd0E9YwMRcWvwwZPIf99BM/export?format=pdf&attachment=false' target='_blank'>Resumé</a>
           </li>
           <li className='navbar--link-item'>
             <a href='mailto: aaronkcarpenter@gmail.com'>Email Me</a>
