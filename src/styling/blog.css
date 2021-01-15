@@ -46,6 +46,11 @@ body {
   justify-content: center;
 }
 
+.image-one {
+  height: 10%;
+  width: 10%;
+}
+
 .header-photo {
   /* height: 10%;
   width: 10%; */
@@ -94,7 +99,7 @@ a {
   justify-content: center;
   text-align: center;
   margin-top: 10px;
-  box-shadow: 5px 5px 20px;
+  /* box-shadow: 5px 5px 20px; */
 }
 
 .bio-container__child {

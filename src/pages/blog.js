@@ -14,11 +14,11 @@ export default function Blog({ data }) {
       <h1 className='header'>Posts</h1>
 
       {posts.map(post => (
-        <article key={post.id}>
+        <article className='post-content' key={post.id}>
           <Link to={post.fields.slug}>
-            <h2>{post.frontmatter.title}</h2>
+            <h2 className='post-title'>{post.frontmatter.title}</h2>
           </Link>
-          <small>
+          <small className='post-detail'>
             {post.frontmatter.author}, 
             {post.frontmatter.date}
           </small>

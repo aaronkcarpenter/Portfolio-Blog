@@ -31,7 +31,10 @@ export default function Home({ data }) {
       </div>
       <div className='bio-container'>
         <p className='bio-container__child'>
-          Hi! I'm Aaron, a Supply Chain and Logistics professional turned Software engineer. 
+          Hi! I'm Aaron, a Supply Chain and Logistics professional turned Software Engineer. 
+          While I believe that I have an eye for great designs and enjoy working
+          with the front end of applications, my training at App Academy exposed
+          me to the entire application development process, back to front.
           I'm well versed in JavaScript, PostgreSQL, Express, Python, Firebase, Flask 
           and a host of other frameworks and languages. My interests are in building 
           products, developing tools to acquire data, and automation. To put it simply, I enjoy 
@@ -43,21 +46,21 @@ export default function Home({ data }) {
       </div>
       <div className='blog-section'>
       <div className='blog-links link-one'>
-        <a href='/my-first-post/' target='_blank'>Blog Activated</a>
+        <a href='/twitter-bot-suspension/' target='_blank'>How I Got My First Twitter Bot Suspended</a>
       <div className='image-one__container'>
-        <img alt='BlogPost' src='/#' target='_blank' />
+        <img alt='BlogPost' src={data.imageTwo.publicURL} target='_blank' className='image-one'/>
       </div>
       </div>
       <div className='blog-links link-two'>
-        <a href='/my-first-post/' target='_blank'>Blog Post 2</a>
+        <a href='/my-first-post/' target='_blank'>Rejected</a>
         <div className='image-one__container'>
-          <img alt='Post 2' src='/#' target='_blank' />
+          <img alt='Post 2' src={data.imageTwo.publicURL} target='_blank' className='image-one'/>
         </div>
       </div>
       <div className='blog-links link-three'>
         <a href='/my-first-post/' target='_blank'>Blog Post 3</a>
         <div className='image-one__container'>
-          <img alt='Post 3' src='/#' target='_blank' />
+          <img alt='Post 3' src={data.imageTwo.publicURL} target='_blank' className='image-one' />
         </div>
       </div>
       <div className='blog-header'>
@@ -97,12 +100,13 @@ export default function Home({ data }) {
         <p>Keep track of and split expenses with others.</p>
         <div className='projects-links link-four'>
           <p>
-            <img alt='Twitter Bot' src='/#' className='project-one__image' />
+            <img alt='Twitter Bot' src={data.imageTwo.publicURL} className='project-one__image image-one' />
           </p>
         </div>
         <div className='project-link'>
           <a href='http://twitter.com/bentleysuperior' target='_blank'>Twitter Bot</a>
         </div>
+        <p>Bentley Superior posts the most retweeted tweets daily</p>
         <div className='projects-links link-five'>
           <p>
             <img alt='Property Scraper' src='https://u.cubeupload.com/aaronkyle/f70ScreenShot20201112at.png' className='project-five__image' />
@@ -171,6 +175,9 @@ export const pageQuery = graphql`
     }
 
     image: file(base: { eq: "blog-pic-one.png" }) {
+      publicURL
+    }
+    imageTwo: file(base: { eq: "twitter.png" }) {
       publicURL
     }
   }
