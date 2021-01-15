@@ -67,6 +67,23 @@ body {
   width: 20%;
 }
 
+.blog-section {
+  margin: 10px 20px;
+}
+
+.link-one:any-link,
+.link-two:any-link,
+.link-three:any-link {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.link:any-link {
+  color: black;
+  font-weight: bolder;
+}
+
 .projects-header,
 .socials-header,
 .blog-header {
@@ -87,6 +104,14 @@ a {
 .link:visited {
   /* color: red; */
   text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  /* padding-right: 10px;
+  padding-left: 10px; */
+  /* border-right: 1px solid white; */
 }
 
 .bio-container {

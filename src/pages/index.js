@@ -46,27 +46,27 @@ export default function Home({ data }) {
         </p>
       </div>
       <div className='blog-section'>
-      <div className='blog-links link-one'>
-        <a href='/twitter-bot-suspension/' target='_blank'>How I Got My First Twitter Bot Suspended</a>
-      <div className='image-one__container'>
-        <img alt='BlogPost' src={data.imageTwo.publicURL} target='_blank' className='image-one'/>
-      </div>
-      </div>
-      <div className='blog-links link-two'>
-        <a href='/my-first-post/' target='_blank'>Rejected</a>
+        <div className='blog-links'>
+          <a className='link-one' href='/twitter-bot-suspension/' target='_blank'>How I Got My First Twitter Bot Suspended</a>
         <div className='image-one__container'>
-          <img alt='Post 2' src={data.imageThree.publicURL} target='_blank' className='image-one'/>
+          <img alt='BlogPost' src={data.imageTwo.publicURL} target='_blank' className='image-one'/>
         </div>
-      </div>
-      <div className='blog-links link-three'>
-        <a href='/my-first-post/' target='_blank'>Blog Post 3</a>
-        <div className='image-one__container'>
-          <img alt='Post 3' src={data.imageTwo.publicURL} target='_blank' className='image-one' />
         </div>
-      </div>
-      <div className='blog-header'>
-        <Link className='link blog-header' to='/blog'>Blog</Link>
-      </div>
+        <div className='blog-links'>
+          <a className='link-two' href='/my-first-post/' target='_blank'>Rejected</a>
+          <div className='image-one__container'>
+            <img alt='Post 2' src={data.imageThree.publicURL} target='_blank' className='image-one'/>
+          </div>
+        </div>
+        <div className='blog-links'>
+          <a className='link-three' href='/getting-better' target='_blank'>Getting Better</a>
+          <div className='image-one__container'>
+            <img alt='Post 3' src={data.imageFour.publicURL} target='_blank' className='image-one' />
+          </div>
+        </div>
+        <div className='blog-header'>
+          <Link className='link blog-header' to='/blog'>Blog</Link>
+        </div>
       </div>
       <div className='projects-section'>
         <div className='projects-header'>
@@ -182,6 +182,9 @@ export const pageQuery = graphql`
       publicURL
     }
     imageThree: file(base: { eq: "rejected.png" }) {
+      publicURL
+    }
+    imageFour: file(base: { eq: "perseverance.png" }) {
       publicURL
     }
   }

@@ -1,6 +1,7 @@
 .nav-container {
   text-transform: uppercase;
-  padding: 0.5rem 2.5rem;
+  /* padding: 0.5rem 2.5rem; */
+  padding: 5px 30px;
   /* position: absolute; */
   position: relative;
   /* margin: 0 auto; */
@@ -25,23 +26,33 @@
 
 .navbar--link {
   letter-spacing: 0.1em;
-  transition: opacity 0.2s, visibility 0ms linear 0.2s, transform 0.5s ease;
+  /* transition: opacity 0.2s, visibility 0ms linear 0.2s, transform 0.5s ease; */
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-end;
+  /* justify-content: space-between; */
   position: relative;
   margin: 0 auto;
   z-index: 1;
   width: 100%;
 }
 
-a:link {
+.navbar-links {
   text-decoration: none;
   color: white;
   padding-right: 10px;
   padding-left: 10px;
   border-right: 1px solid white;
+}
+
+.navbar-links:any-link {
+  color: white;
+}
+
+.navbar-links:hover {
+  background-color: white;
+  color: black;
 }
 
 ul {
