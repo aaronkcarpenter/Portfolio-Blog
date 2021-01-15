@@ -32,11 +32,12 @@ export default function Home({ data }) {
       <div className='bio-container'>
         <p className='bio-container__child'>
           Hi! I'm Aaron, a Supply Chain and Logistics professional turned Software Engineer. 
-          While I believe that I have an eye for great designs and enjoy working
+          While I have an eye for great designs and enjoy working
           with the front end of applications, my training at App Academy exposed
           me to the entire application development process, back to front.
           I'm well versed in JavaScript, PostgreSQL, Express, Python, Firebase, Flask 
-          and a host of other frameworks and languages. My interests are in building 
+          and a host of other frameworks and languages (This site is built with
+          Gatsby/React/Firebase/MarkDown). My interests are in building 
           products, developing tools to acquire data, and automation. To put it simply, I enjoy 
           merging the two worlds of business and technology together. The internet 
           has been an amazing place for many years, and I'm intrigued 
@@ -54,7 +55,7 @@ export default function Home({ data }) {
       <div className='blog-links link-two'>
         <a href='/my-first-post/' target='_blank'>Rejected</a>
         <div className='image-one__container'>
-          <img alt='Post 2' src={data.imageTwo.publicURL} target='_blank' className='image-one'/>
+          <img alt='Post 2' src={data.imageThree.publicURL} target='_blank' className='image-one'/>
         </div>
       </div>
       <div className='blog-links link-three'>
@@ -177,7 +178,10 @@ export const pageQuery = graphql`
     image: file(base: { eq: "blog-pic-one.png" }) {
       publicURL
     }
-    imageTwo: file(base: { eq: "twitter.png" }) {
+    imageTwo: file(base: { eq: "suspended.png" }) {
+      publicURL
+    }
+    imageThree: file(base: { eq: "rejected.png" }) {
       publicURL
     }
   }

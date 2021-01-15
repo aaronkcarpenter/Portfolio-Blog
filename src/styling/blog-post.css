@@ -1,0 +1,23 @@
+.blog-post__container {
+  font-size: 24px;
+  /* height: 100vh; */
+  height: 100%;
+}
+
+.post-title__ {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  /* font-size: 28px; */
+}
+
+.actual-post {
+  text-align: justify;
+  margin: 0 20px;
+}
+
+.bottom-link {
+  color: black;
+  font-size: 28px;
+  text-align: center;
+}
