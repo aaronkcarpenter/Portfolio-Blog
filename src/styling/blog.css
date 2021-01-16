@@ -69,6 +69,7 @@ body {
 
 .blog-section {
   margin: 10px 20px;
+  text-align: center;
 }
 
 .link-one:any-link,
@@ -79,14 +80,23 @@ body {
   font-weight: 700;
 }
 
-.link:any-link {
+.blog-header {
+  /* color: white; */
   color: black;
+  /* background-color: black; */
+  font-size: 1.5em;
+  /* text-decoration: underline; */
+  letter-spacing: 0.3em;
+}
+
+.link:any-link {
   font-weight: bolder;
+  /* color: white; */
+  color: black;
 }
 
 .projects-header,
-.socials-header,
-.blog-header {
+.socials-header {
   color: black;
   font-size: 1.5em;
   text-decoration: underline;

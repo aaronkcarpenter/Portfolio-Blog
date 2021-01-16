@@ -65,7 +65,7 @@ export default function Home({ data }) {
           </div>
         </div>
         <div className='blog-header'>
-          <Link className='link blog-header' to='/blog'>Blog</Link>
+          <Link className='link blog-header' to='/blog'>Latest Blog Posts</Link>
         </div>
       </div>
       <div className='projects-section'>
