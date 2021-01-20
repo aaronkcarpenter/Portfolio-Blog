@@ -11,7 +11,7 @@ export default function Navbar() {
           <div className='title-header'>
             <h1>Aaron Carpenter</h1>
           <div className='subheader-home'>
-            <p>Software Engineer | Business & Investing Enthusiast | Content Creator</p>
+            <p>Full-Stack Software Development | Commerce & Investing | Content Creator</p>
           </div>
           </div>
         </div>

@@ -27,7 +27,13 @@ export default function Home({ data }) {
       </div> */}
       {/* <Blog /> */}
       <div className='image-container'>
-        <img  className='header-photo' alt='Sexy Man' src={data.image.publicURL} />
+        {/* <img  className='header-photo' alt='Sexy Man' src={data.imageNine.publicURL} /> */}
+        <i className="fab fa-react footer-i fa-5x" />{" "}
+        <i className="fab fa-python footer-i fa-5x" />
+        <i className="fab fa-node-js footer-i fa-5x" />
+        <i className="fab fa-html5 footer-i fa-5x" />
+        <i className="fab fa-css3-alt footer-i fa-5x" />
+        <i className="fas fa-laptop-code footer-i fa-5x" />
       </div>
       <div className='bio-container'>
         <p className='bio-container__child'>
@@ -185,6 +191,21 @@ export const pageQuery = graphql`
       publicURL
     }
     imageFour: file(base: { eq: "perseverance.png" }) {
+      publicURL
+    }
+    imageFive: file(base: { eq: "blog-pic-alt.png" }) {
+      publicURL
+    }
+    imageSix: file(base: { eq: "blog-pic-alt2.png" }) {
+      publicURL
+    }
+    imageSeven: file(base: { eq: "blog-pic-alt3.png" }) {
+      publicURL
+    }
+    imageEight: file(base: { eq: "blog-pic-alt4.png" }) {
+      publicURL
+    }
+    imageNine: file(base: { eq: "blog-pic-alt5.png" }) {
       publicURL
     }
   }
