@@ -68,9 +68,9 @@ export default function Home({ data }) {
           <Link className='link blog-header' to='/blog'>Latest Blog Posts</Link>
         </div>
       </div>
-      <div className='projects-section'>
+      <div className='projects-section' id='projects'>
         <div className='projects-header'>
-          <h2>What I'm Currently Working On</h2>
+          <h2>Current Projects</h2>
         </div>
         <div className='projects-links link-one'>
           <p>
@@ -78,7 +78,7 @@ export default function Home({ data }) {
           </p>
         </div>
         <div className='project-link'>
-          <a href='https://app-academy-capstone-project.web.app/' target='_blank'>Aimé Leon Dore</a>
+          <a href='https://app-academy-capstone-project.web.app/' target='_blank' rel="noreferrer">Aimé Leon Dore</a>
         </div>
         <p>An e-Commerce platform for all of your Men's mid to high-end fashion needs.</p>
         <div className='projects-links link-two'>
@@ -87,7 +87,7 @@ export default function Home({ data }) {
           </p>
         </div>
         <div className='project-link'>
-          <a href='https://hypesnob.herokuapp.com/' target='_blank'>HypeSnob</a>
+          <a href='https://hypesnob.herokuapp.com/' target='_blank' rel="noreferrer">HypeSnob</a>
         </div>
         <p>Celebrate sneaker culture and browse the latest styles of Jordan, Nike, and Adidas.</p>
         <div className='projects-links link-three'>
@@ -96,7 +96,7 @@ export default function Home({ data }) {
           </p>
         </div>
         <div className='project-link'>
-          <a href='http://splitorama.herokuapp.com/' target='_blank'>Split-O-Rama</a>
+          <a href='http://splitorama.herokuapp.com/' target='_blank' rel="noreferrer">Split-O-Rama</a>
         </div>
         <p>Keep track of and split expenses with others.</p>
         <div className='projects-links link-four'>
@@ -105,7 +105,7 @@ export default function Home({ data }) {
           </p>
         </div>
         <div className='project-link'>
-          <a href='http://twitter.com/bentleysuperior' target='_blank'>Twitter Bot</a>
+          <a href='http://twitter.com/bentleysuperior' target='_blank' rel="noreferrer">Twitter Bot</a>
         </div>
         <p>Bentley Superior posts the most retweeted tweets daily</p>
         <div className='projects-links link-five'>
@@ -114,17 +114,17 @@ export default function Home({ data }) {
           </p>
         </div>
         <div className='project-link'>
-          <a href='http://github.com/aaronkcarpenter' target='_blank'>Software Jobs Scraper</a>
+          <a href='http://github.com/aaronkcarpenter' target='_blank' rel="noreferrer">Software Jobs Scraper</a>
         </div>
         <p>This scraper allows you to pull relevant Software Engineer job postings.</p>
       </div>
-      <div className='socials-section'>
+      <div className='socials-section' id='social'>
         <div className='socials-header'>
           <h2>Social</h2>
         </div>
         <div className='socials-links__container'>
           <div className='socials-links link-one'>
-            <a href='https://www.github.com/aaronkcarpenter' target='_blank' className='socials-links__title'>Github</a>
+            <a href='https://www.github.com/aaronkcarpenter' target='_blank' rel="noreferrer" className='socials-links__title'>Github</a>
           <div className='image-one__container'>
             <img alt='Github Website' src='https://u.cubeupload.com/aaronkyle/eb0ScreenShot20210102at.png' target='_blank' className='social-image__one' />
           </div>
@@ -133,7 +133,7 @@ export default function Home({ data }) {
         </div>
         <div className='socials-links__container'>
           <div className='socials-links link-two'>
-            <a href='https://www.linkedin.com/in/aaronkcarpenter' target='_blank'>LinkedIn</a>
+            <a href='https://www.linkedin.com/in/aaronkcarpenter' target='_blank' rel="noreferrer">LinkedIn</a>
             <div className='image-one__container'>
               <img alt='LinkedIn Profile' src='https://u.cubeupload.com/aaronkyle/dc9ScreenShot20210102at.png' target='_blank' className='social-image__two' />
             </div>
@@ -141,7 +141,7 @@ export default function Home({ data }) {
         </div>
         <div className='socials-links__container'>
           <div className='socials-links link-three'>
-            <a href='https://angel.co/u/aaron-carpenter-4' target='_blank'>AngelList</a>
+            <a href='https://angel.co/u/aaron-carpenter-4' target='_blank' rel="noreferrer">AngelList</a>
             <div className='image-one__container'>
               <img alt='AngelList Profile' src='https://u.cubeupload.com/aaronkyle/304ScreenShot20210102at.png' target='_blank' className='social-image__three' />
             </div>
