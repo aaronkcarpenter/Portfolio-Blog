@@ -11,23 +11,30 @@ export default function Blog({ data }) {
   return(
     <div>
       <Navbar />
-      <h1 className='header'>Posts</h1>
+      <div className='image-one__container--posts'>
+        {/* <img alt='BlogPost' src={data.image.publicURL} target='_blank' className='image-one__posts'/> */}
+        <img alt='BlogPost' src='/#' target='_blank' className='image-one__posts'/>
+        <div>
+          <h1 className='header-within__container'>Posts</h1>
+        </div>
+      </div>
+      {/* <h1 className='header'>Posts</h1> */}
 
       {posts.map(post => (
         <article className='post-content' key={post.id}>
           <Link to={post.fields.slug}>
             <h2 className='post-title'>{post.frontmatter.title}</h2>
           </Link>
-          <small className='post-detail'>
+          <small className='post-author'>
             {post.frontmatter.author}, 
             {post.frontmatter.date}
           </small>
-          <p>{post.excerpt}</p>
+          <p className='post-excerpt'>{post.excerpt}</p>
         </article>
       ))}
 
       <div className='back-home'>
-        <a href='/'>Take Me Home</a>
+        <a href='/'>Home</a>
       </div>
       <Footer />
     </div>
@@ -49,6 +56,9 @@ export const pageQuery = graphql`
         excerpt
         id
       }
+    }
+    image: file(base: { eq: "posts-page-picture.png" }) {
+    publicURL
     }
   }
 `
