@@ -6,7 +6,9 @@ date: 2021-01-20
 
 <!-- ## Building out an e-Commerce Clone -->
 
-![Aimé Leon Dore](/src/images/ald-post.png "Aimé Leon Dore")
+<!-- ![Aimé Leon Dore](/src/images/ald-post.png "Aimé Leon Dore") -->
+
+![Aimé Leon Dore](https://u.cubeupload.com/aaronkyle/ScreenShot20201022at.png)
 
 To be great at something, I do believe you have to enjoy doing it in one way
 or another. Passion isn't absolutely necessary, but I've found that as I build
@@ -28,6 +30,8 @@ out on Express/PostgreSQL and Flask/SQLAlchemy, which were taught during the boo
 used for the site were React, React Hooks, Raw CSS, Firebase, and Google Cloud Firestore for site images.
 This was definitely the right move and allowed me to focus on making a great website.
 
-In 2 Weeks, I was able to build out a front-end that I was quite proud of.
+In 2 Weeks, I was able to build out a front-end that I was quite proud of. Feel
+free to head over to checkout the site at **[ALD](https://app-academy-capstone-project.web.app)** .
+
 
 <!-- Insert Pic of Website Here -->
